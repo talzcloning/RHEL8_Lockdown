@@ -192,7 +192,7 @@ cat > /etc/issue.net << 'EOF'
 /------------------------------------------------------------------------\
 |                       *** NOTICE TO USERS ***                          |
 |                                                                        |
-| This computer system is the private property of YOUR_COMPANY_NAME      |
+| This computer system is the private property of SAMH and SACS      |
 | It is for authorized use only.                                         |
 |                                                                        |
 | Users (authorized or unauthorized) have no explicit or implicit        |
@@ -216,7 +216,7 @@ cat > /etc/issue.net << 'EOF'
 EOF
 cp -p /etc/motd /etc/motd_$TIME.bak
 cat > /etc/motd << 'EOF'
-YOUR_COMPANY_NAME AUTHORIZED USE ONLY
+SAMH and SACS AUTHORIZED USE ONLY
 EOF
 rm -rf /etc/issue
 ln -s /etc/issue.net /etc/issue
